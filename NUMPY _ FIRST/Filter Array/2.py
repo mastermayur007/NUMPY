@@ -1,0 +1,12 @@
+import numpy as np
+
+arr=np.array([42,43,44,45,46,47,48,49,50])
+filter_arr=[]
+for element in arr:
+    if element>42:
+        filter_arr.append(True)
+    else:
+        filter_arr.append(False)
+newarr=arr[filter_arr]
+print(newarr)
+print(filter_arr)        
